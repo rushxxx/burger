@@ -1,0 +1,44 @@
+.container-we{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.title-we{
+	color: #000;
+}
+
+.content-wrapper{
+	width: 940px;
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+	margin-top: 80px;
+}
+
+.content{
+		width: 320px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #000;
+    text-align: center;
+
+	&__pic{
+		height: 80px;
+	}
+
+	&__title{
+		font-family: 'lifehackmedium';
+		font-size: 24.12px;
+		margin: 20px 0;
+	}
+
+	&__text{
+		font-family: 'ubuntulight';
+		font-size: 14.4px;
+	}
+	
+}

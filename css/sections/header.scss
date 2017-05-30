@@ -1,0 +1,80 @@
+.container-header{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+
+.header{
+	height: 85px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+	&__logo{
+		flex-basis: 20%;
+	}
+}
+
+.nav{
+	flex-basis: 80%;
+	align-items: center;
+
+	&__list{
+	display: flex;
+	flex-direction: col;
+	justify-content: space-between;
+	align-items: center;
+	
+		&:first-child{
+			list-style: none;
+		}
+	}
+
+	&__item{
+		list-style: disc;
+		padding: 10px 10px;
+
+		&:hover{
+			list-style: none;
+			background-color: #e45028;
+			border-radius: 4px;
+		}
+	}
+
+	&__link{
+		font-family: 'ubunturegular';
+		color: #fff;
+				text-transform: uppercase;
+		font-size: 13px;
+	}
+}
+
+.main-burger{
+	flex-basis: 50%;
+}
+
+.title-wrapper{
+	flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-title{
+	font-family: 'gagalinregular';
+	font-size: 72px;
+	color: #f9b43b;
+}
+
+.header-text{
+	font-family: 'lifehackmedium';
+	font-size: 65px;
+	color: #fff;
+	margin-top: 20px;
+}
+
+.arrow-scroll{
+	height: 20px;
+	flex-basis: 100%;
+	margin-bottom: 40px;
+}

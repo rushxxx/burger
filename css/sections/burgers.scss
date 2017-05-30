@@ -1,0 +1,138 @@
+.section-burgers{
+	background: #f9b43b;
+	background: -moz-linear-gradient(top, #f9b43b 0%, #eb8c38 50%, #f9b43b 100%);
+	background: -webkit-linear-gradient(top, #f9b43b 0%,#eb8c38 50%,#f9b43b 100%);
+	background: linear-gradient(to bottom, #f9b43b 0%,#eb8c38 50%,#f9b43b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b43b', endColorstr='#f9b43b',GradientType=0 );
+  position: relative;
+}
+
+.container-burgers{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item{
+  display: flex;
+  height: 650px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+//    ingredients menu
+
+.ingredients-button{
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(227, 80, 40);
+  opacity: 1;
+  width: 90px;
+  height: 90px;
+  font-family: 'gagalinregular';
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  top: 90px;
+  left: 70px;
+}
+
+.ingredients-button__pic{
+	width: 50px;
+	height: 50px;
+}
+
+.ingredients-wrapper{
+  position: absolute;
+  left : 90px;
+}
+
+.ingredients{
+  width: 270px;
+  height: 330px;
+  background-color: rgba(255, 255, 255, .7);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 10px;
+  align-items: flex-end;
+
+  opacity: 0;  //         Убрана с экрана 
+
+  &__item{
+    display: flex;
+    font-family: "ubuntumedium";
+    font-size: 14px;
+    color: #000;
+    align-items: center;
+  }
+
+  &__name{
+    width: 120px;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  &__weight{
+    width: 50px;
+  }
+}
+
+// ---------
+
+.durger-wrapper, .durger__description-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+      align-items: baseline;
+}
+
+.burger__description{
+  font-family: "ubuntulight";
+  font-size: 14px;
+}
+
+.price{
+  &-value, &-text{
+  font-family: "Gagalin";
+  font-size: 72px;
+  color: #e35028;
+  }
+
+  &-text{
+    font-size: 32px;
+  }
+}
+
+.order-button{
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e45028;
+  font-family: "ubuntumedium";
+  font-size: 13px;
+  color: #fff;
+  margin-left: 30px;
+}
+
+.nutrition{
+  font-family: "Gagalin";
+  position: relative;
+
+  &__value{
+    position: absolute;
+    left: 13px;
+    bottom: 10px;
+    font-size: 20px;
+  }
+
+  &__text{
+    font-size: 14px;
+    position: absolute;
+    left: 15px;
+  }
+}
+
+

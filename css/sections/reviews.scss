@@ -1,0 +1,65 @@
+.reviews{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+	&__block{
+		width: 25%;
+		height: 50%;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		font-size: 14px;
+		color: #fff;
+
+		&:hover{
+			.reviews__content, .reviews__hover{
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+	}
+
+	&__hover{
+		width: 25%;
+		height: 50%;
+		background-color: rgba(0, 0, 0, 0.8);
+		position: absolute;
+		opacity: 0;
+		transform: scale(.9);
+		transition: .3s;
+	}
+
+	&__content{
+		height: 100%;
+		padding: 40px 20px 60px;
+		opacity: 0;
+		transform: scale(.9);
+		transition: .3s;
+	}
+
+	&__title{
+		font-family: 'gagalinregular';
+		text-transform: uppercase;
+	}
+
+	&__text{
+		max-height: calc(100% - 100px);
+		font-family: 'ubuntulight';
+		overflow: hidden;
+	}
+
+	&__button{
+		width: 110px;
+		height: 35px;
+		border: none;
+		border-radius: 5px;
+		background-color: #1f2122;
+		margin-top: 20px;
+		font-family: 'ubuntumedium';
+		font-size: 13px;
+		text-transform: uppercase;
+		color: #fff;
+	}
+}

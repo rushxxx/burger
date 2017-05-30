@@ -1,0 +1,69 @@
+.yandex-map{
+	width: 100%;
+	height: calc(100% - 60px);
+}
+
+.footer{
+	width: 100%;
+	height: 60px;
+
+	&-wrapper{
+		display: flex;
+	}
+}
+
+.contacts{
+	width: 70%;
+	font-size: 14px;
+	line-height: 2.15;
+
+	&__adress{
+		color: #fff;
+		font-family: 'ubuntulight';
+
+	}
+
+	&__phone{
+		color: $orange;
+		font-family: 'ubuntubold';
+
+	}
+}
+
+.socials{
+	display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+
+	&-wrapper{
+		width: 30%;
+	}
+
+	&__item{
+		margin-left: 13px;
+	}
+
+	&__link{
+	  max-width: 23px;
+	  max-height: 20px;
+	  opacity: .3;
+	  transition: .3s;
+
+	  &:hover {
+		  opacity: 1;
+		}
+
+		svg {
+		  width: 100%;
+		  height: 100%;
+		}
+	}
+
+	&__icon{
+	  width: 23px !important;
+	  height: 23px !important;
+	  fill: #fff;
+	}
+}
+
